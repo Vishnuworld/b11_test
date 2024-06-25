@@ -37,6 +37,8 @@ emp_lst = [
     Employee(name="D", salary=40000, age=23, email="d@gmail.com"),
     Employee(name="E", salary=50000, age=22, email="e@gmail.com"),
     Employee(name="F", salary=60000, age=25, email="f@gmail.com"),
+    Employee(name="G", salary=78000, age=23, email="g@gmail.com"),
+
 ]
 
 # print(emp_lst)
@@ -130,7 +132,7 @@ class MySQLDBOperation:
 
     def insert_records(self):
         """
-        Inserts multiple records into the employee table.
+        Inserts multiple records into the employee's table.
 
         Args:
             employees (list): A list of Employee objects to be inserted into the database.
@@ -144,7 +146,8 @@ class MySQLDBOperation:
         print("Records inserted successfully")
 
 
-
+class Student:
+    pass
 
 
 import toml

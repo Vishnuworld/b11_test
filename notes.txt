@@ -1,0 +1,34 @@
+SQL   No-SQL
+
+Structured Query Language
+RDBMS -- 
+
+
+Person                    Aadhar
+
+
+
+Person                   Watches
+name                     brand
+age
+address
+
+watch brand
+watch price
+
+
+Many to Many 
+Student                      Subject
+himanshu                     python, java, sql
+
+
+1
+show databases;
+use world;
+show tables;
+select  * from city;
+
+1
+2
+3
+

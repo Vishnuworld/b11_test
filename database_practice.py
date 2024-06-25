@@ -38,6 +38,8 @@ emp_lst = [
     Employee(name="E", salary=50000, age=22, email="e@gmail.com"),
     Employee(name="F", salary=60000, age=25, email="f@gmail.com"),
     Employee(name="G", salary=78000, age=23, email="g@gmail.com"),
+    Employee(name="H", salary=97800, age=26, email="H@gmail.com"),
+
 
 ]
 

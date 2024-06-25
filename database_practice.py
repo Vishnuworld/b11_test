@@ -36,8 +36,10 @@ emp_lst = [
     Employee(name="C", salary=30000, age=24, email="c@gmail.com"),
     Employee(name="D", salary=40000, age=23, email="d@gmail.com"),
     Employee(name="E", salary=50000, age=22, email="e@gmail.com"),
-    Employee(name="F", salary=60000, age=25, email="f@gmail.com"),
-    Employee(name="G", salary=78000, age=23, email="g@gmail.com"),
+    Employee(name="F", salary=60000, age=20, email="f@gmail.com"),
+    Employee(name="GGG", salary=78000, age=25, email="ggg@gmail.com"),
+    Employee(name="HHH", salary=78200, age=28, email="hhh@gmail.com"),
+
     Employee(name="H", salary=97800, age=26, email="H@gmail.com"),
 
 
@@ -48,6 +50,7 @@ emp_lst = [
 
 class MySQLDBOperation:
     def __init__(self, host, port, database, user, password):
+        '''This class is for Mysql operator'''
         self.HOST = host
         self.PORT = port
         self.DATABASE = database
@@ -74,6 +77,9 @@ class MySQLDBOperation:
             user=self.USER,
         )
         return self.conn
+    
+    def func():
+        pass
 
     def show_databases(self):
         db_conn = self.get_db_connection()

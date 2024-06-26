@@ -17,11 +17,12 @@ import pymysql
 
 
 class Employee:
-    def __init__(self, name, salary, age, email):
+    def __init__(self, name, salary, age, email, company="TCS"):
         self.Name = name
         self.Salary = salary
         self.Age = age
         self.Email = email
+        self.Company = company
 
     def __str__(self):
         return f"\n{self.__dict__}"
@@ -33,7 +34,7 @@ class Employee:
 emp_lst = [
     Employee(name="A", salary=10000, age=25, email="a@gmail.com"),
     Employee(name="B", salary=20000, age=22, email="b@gmail.com"),
-    Employee(name="C", salary=30000, age=24, email="c@gmail.com"),
+    Employee(name="CCC", salary=30000, age=24, email="c@gmail.com"),
     Employee(name="D", salary=40000, age=23, email="d@gmail.com"),
     Employee(name="E", salary=50000, age=22, email="e@gmail.com"),
     Employee(name="F", salary=60000, age=20, email="f@gmail.com"),
@@ -50,7 +51,7 @@ emp_lst = [
 
 class MySQLDBOperation:
     def __init__(self, host, port, database, user, password):
-        '''This class is for Mysql operator'''
+        '''for mysql database operation'''
         self.HOST = host
         self.PORT = port
         self.DATABASE = database
@@ -77,9 +78,9 @@ class MySQLDBOperation:
             user=self.USER,
         )
         return self.conn
-    
-    def func():
-        pass
+
+    def func(self):
+        print("in func for testing git")
 
     def show_databases(self):
         db_conn = self.get_db_connection()

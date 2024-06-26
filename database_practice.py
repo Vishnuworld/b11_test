@@ -1,3 +1,6 @@
+# this is added by saksham
+
+
 import pymysql
 
 # port -- 3306
@@ -17,11 +20,12 @@ import pymysql
 
 
 class Employee:
-    def __init__(self, name, salary, age, email):
+    def __init__(self, name, salary, age, email, address="pune"):
         self.Name = name
         self.Salary = salary
         self.Age = age
         self.Email = email
+        self.Address = address
 
     def __str__(self):
         return f"\n{self.__dict__}"
@@ -40,17 +44,17 @@ emp_lst = [
     Employee(name="GGG", salary=78000, age=25, email="ggg@gmail.com"),
     Employee(name="HHH", salary=78200, age=28, email="hhh@gmail.com"),
 
-    Employee(name="H", salary=97800, age=26, email="H@gmail.com"),
+    Employee(name="Sam", salary=97800, age=26, email="sam@gmail.com", address="mumbai"),
 
 
 ]
-
+# this is for learning purpose only
 # print(emp_lst)
-
+# we can give our 
 
 class MySQLDBOperation:
     def __init__(self, host, port, database, user, password):
-        '''This class is for Mysql operator'''
+        '''This class is for Mysql database operation'''
         self.HOST = host
         self.PORT = port
         self.DATABASE = database
@@ -59,15 +63,18 @@ class MySQLDBOperation:
 
     def get_db_connection(self):
         """
-        Establishes a connection to the MySQL database.
+        Establishes a connection
+          to the MySQL database.
         Args:
             None
 
         Returns:
-            pymysql.connections.Connection: A connection object representing the connection to the database.
+            pymysql.connections.Connection:
+              A connection object representing the connection to the database.
 
         Raises:
-            pymysql.err.OperationalError: If there is an issue connecting to the database.
+            pymysql.err.OperationalError:
+              If there is an issue connecting to the database.
         """
         self.conn = pymysql.connect(
             host=self.HOST,
@@ -79,7 +86,7 @@ class MySQLDBOperation:
         return self.conn
     
     def func():
-        pass
+        print("Code added by saksham")
 
     def show_databases(self):
         db_conn = self.get_db_connection()

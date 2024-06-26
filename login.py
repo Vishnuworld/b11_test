@@ -10,3 +10,8 @@ def login(user, password):
 
 def logout():
     print("logout")
+
+
+
+def register(user, pswd, email, mob):
+    print("Registered 1000 lines.")
